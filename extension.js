@@ -1,8 +1,8 @@
-/*     Pop Theme Switcher
-GNOME Shell extension
-(c) Francois Thirioux 2021
-(c) Dimitris Psathas 2022
-License: GPLv3     */
+/* Pop Theme Switcher
+   GNOME Shell extension
+   (c) Francois Thirioux 2021
+   (c) Dimitris Psathas 2022
+   License: GPLv3 */
 
 
 const { Gio, GObject, St } = imports.gi;
@@ -81,6 +81,7 @@ class Extension {
 
     disable() {
         this._indicator._destroy();
+        this._indicator = null;
     }
 }
 
